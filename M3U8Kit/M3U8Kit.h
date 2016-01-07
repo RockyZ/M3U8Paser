@@ -15,6 +15,7 @@ FOUNDATION_EXPORT const unsigned char M3U8KitVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <M3U8Kit/PublicHeader.h>
 
+#import <M3U8Kit/M3U8TagsAndAttributes.h>
 
 #import <M3U8Kit/M3U8ExtXStreamInf.h>
 #import <M3U8Kit/M3U8ExtXStreamInfList.h>
