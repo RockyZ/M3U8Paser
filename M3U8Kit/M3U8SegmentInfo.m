@@ -6,6 +6,7 @@
 //  Copyright (c) 2013年 0day. All rights reserved.
 //
 
+#import <M3U8Kit/M3U8Kit.h>
 #import "M3U8SegmentInfo.h"
 
 @interface M3U8SegmentInfo()

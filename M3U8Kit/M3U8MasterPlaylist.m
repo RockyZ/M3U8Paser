@@ -6,6 +6,7 @@
 //  Copyright (c) 2014 Jin Sun. All rights reserved.
 //
 
+#import <M3U8Kit/M3U8Kit.h>
 #import "M3U8MasterPlaylist.h"
 
 // #define M3U8_EXT_X_STREAM_INF_CLOSED_CAPTIONS   @"CLOSED-CAPTIONS" // The value can be either a quoted-string or an enumerated-string with the value NONE.

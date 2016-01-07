@@ -6,6 +6,7 @@
 //  Copyright (c) 2014 Jin Sun. All rights reserved.
 //
 
+#import <M3U8Kit/M3U8Kit.h>
 #import "M3U8ExtXMediaList.h"
 
 @interface M3U8ExtXMediaList ()

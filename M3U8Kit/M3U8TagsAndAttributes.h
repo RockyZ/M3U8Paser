@@ -210,6 +210,7 @@
  */
 #define M3U8_EXT_X_VERSION                  @"#EXT-X-VERSION:"
 
+#define M3U8_BASE_URL @"baseURL"
 
 
 

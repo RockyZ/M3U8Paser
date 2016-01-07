@@ -6,6 +6,7 @@
 //  Copyright (c) 2013年 iLegendSoft. All rights reserved.
 //
 
+#import <M3U8Kit/M3U8Kit.h>
 #import "M3U8ExtXStreamInf.h"
 
 const MediaResoulution MediaResoulutionZero = {0.f, 0.f};

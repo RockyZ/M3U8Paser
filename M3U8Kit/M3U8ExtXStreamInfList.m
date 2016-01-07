@@ -6,6 +6,7 @@
 //  Copyright (c) 2013年 iLegendSoft. All rights reserved.
 //
 
+#import <M3U8Kit/M3U8Kit.h>
 #import "M3U8ExtXStreamInfList.h"
 
 @interface M3U8ExtXStreamInfList ()

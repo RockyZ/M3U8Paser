@@ -6,6 +6,7 @@
 //  Copyright (c) 2013年 0day. All rights reserved.
 //
 
+#import <M3U8Kit/M3U8Kit.h>
 #import "M3U8PlaylistModel.h"
 
 #define INDEX_PLAYLIST_NAME @"index.m3u8"
