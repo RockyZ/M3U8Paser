@@ -5,6 +5,7 @@
 //  Created by Oneday on 13-1-11.
 //  Copyright (c) 2013年 0day. All rights reserved.
 //
+#import <Foundation/Foundation.h>
 
 //! Project version number for M3U8Kit.
 FOUNDATION_EXPORT double M3U8KitVersionNumber;

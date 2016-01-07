@@ -48,8 +48,9 @@
     }
     
     if (self = [super init]) {
+        self.URL = URL;
+
         if ([string isMasterPlaylist]) {
-            self.URL = URL;
             self.masterPlaylist = [[M3U8MasterPlaylist alloc] initWithContent:string baseURL:URL];
             self.masterPlaylist.name = INDEX_PLAYLIST_NAME;
             self.currentXStreamInf = self.masterPlaylist.xStreamList.firstStreamInf;

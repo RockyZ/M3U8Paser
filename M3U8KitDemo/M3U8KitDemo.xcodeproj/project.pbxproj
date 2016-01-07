@@ -27,6 +27,27 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		623D94B11C3E0ED70059C69D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 623D94AC1C3E0ED70059C69D /* M3U8Kit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9D80EB5D1B732D29002F9A44;
+			remoteInfo = libM3U8Kit;
+		};
+		623D94B31C3E0ED70059C69D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 623D94AC1C3E0ED70059C69D /* M3U8Kit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9D80EB8F1B733305002F9A44;
+			remoteInfo = M3U8Kit;
+		};
+		623D94B51C3E0EF50059C69D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 623D94AC1C3E0ED70059C69D /* M3U8Kit.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 9D80EB8E1B733305002F9A44;
+			remoteInfo = M3U8Kit;
+		};
 		9D1BF8411906009800E38ABD /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 9D1BF8101906009800E38ABD /* Project object */;
@@ -37,6 +58,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		623D94AC1C3E0ED70059C69D /* M3U8Kit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = M3U8Kit.xcodeproj; path = ../../M3U8Kit.xcodeproj; sourceTree = "<group>"; };
 		9D1BF8181906009800E38ABD /* M3U8KitDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = M3U8KitDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D1BF81B1906009800E38ABD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		9D1BF81D1906009800E38ABD /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -86,6 +108,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		623D94AD1C3E0ED70059C69D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				623D94B21C3E0ED70059C69D /* liblibM3U8Kit.a */,
+				623D94B41C3E0ED70059C69D /* M3U8Kit.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		9D1BF80F1906009800E38ABD = {
 			isa = PBXGroup;
 			children = (
@@ -120,6 +151,7 @@
 		9D1BF8211906009800E38ABD /* M3U8KitDemo */ = {
 			isa = PBXGroup;
 			children = (
+				623D94AC1C3E0ED70059C69D /* M3U8Kit.xcodeproj */,
 				9D1BF82A1906009800E38ABD /* ILSAppDelegate.h */,
 				9D1BF82B1906009800E38ABD /* ILSAppDelegate.m */,
 				9D1BF82D1906009800E38ABD /* Main_iPhone.storyboard */,
@@ -176,6 +208,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				623D94B61C3E0EF50059C69D /* PBXTargetDependency */,
 			);
 			name = M3U8KitDemo;
 			productName = M3U8KitDemo;
@@ -226,6 +259,12 @@
 			mainGroup = 9D1BF80F1906009800E38ABD;
 			productRefGroup = 9D1BF8191906009800E38ABD /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 623D94AD1C3E0ED70059C69D /* Products */;
+					ProjectRef = 623D94AC1C3E0ED70059C69D /* M3U8Kit.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				9D1BF8171906009800E38ABD /* M3U8KitDemo */,
@@ -233,6 +272,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		623D94B21C3E0ED70059C69D /* liblibM3U8Kit.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = liblibM3U8Kit.a;
+			remoteRef = 623D94B11C3E0ED70059C69D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		623D94B41C3E0ED70059C69D /* M3U8Kit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = M3U8Kit.framework;
+			remoteRef = 623D94B31C3E0ED70059C69D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		9D1BF8161906009800E38ABD /* Resources */ = {
@@ -279,6 +335,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		623D94B61C3E0EF50059C69D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = M3U8Kit;
+			targetProxy = 623D94B51C3E0EF50059C69D /* PBXContainerItemProxy */;
+		};
 		9D1BF8421906009800E38ABD /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 9D1BF8171906009800E38ABD /* M3U8KitDemo */;
