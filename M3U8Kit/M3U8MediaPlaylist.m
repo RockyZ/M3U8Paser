@@ -86,10 +86,17 @@
         // Read the segment link, and ignore line start with # && blank line
         while (1) {
             NSRange lfRange = [remainingSegments rangeOfString:@"\n"];
-            NSString *line = [remainingSegments substringWithRange:NSMakeRange(0, lfRange.location)];
-            line = [line stringByReplacingOccurrencesOfString:@" " withString:@""];
             
-            remainingSegments = [remainingSegments substringFromIndex:lfRange.location + 1];
+            NSString *line = nil;
+            if (lfRange.location != NSNotFound) {
+                line = [remainingSegments substringWithRange:NSMakeRange(0, lfRange.location)];
+                remainingSegments = [remainingSegments substringFromIndex:lfRange.location + 1];
+            } else {
+                line = remainingSegments;
+                remainingSegments = @"";
+            }
+            
+            line = [line stringByReplacingOccurrencesOfString:@" " withString:@""];
             
             if ([line characterAtIndex:0] != '#' && 0 != line.length) {
                 // remove the CR character '\r'
